@@ -1,0 +1,4 @@
+development:
+  keys:
+    openai_api_prompt: write a simple haiku.
+    googleai_api_prompt: write a simple haiku.
