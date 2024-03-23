@@ -6,7 +6,7 @@ def minimum():
     googleAI.getResults()
     openAI.getResults()
 
-minimum()
+# minimum()
 
 def chain():
     openaichain.getResults()
