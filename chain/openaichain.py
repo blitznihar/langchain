@@ -33,11 +33,14 @@ def getResults():
     
     print('\n------------------------- result_code --------------------------------\n')
     print(result_code)
+
+    print('\n------------------------- result_code_BEGIN --------------------------------\n')
+    print(result_code["code"])
     print('\n------------------------- result_code_END --------------------------------\n')
 
 
     test_prompt = PromptTemplate(
-        template = "Write a test for the following {language} code:\n {code}",
+        template = "Write a unit test in {language} for the following  code:\n {code}",
         input_variables=["language", "code"]
     )
     
@@ -53,6 +56,8 @@ def getResults():
     
     print('\n------------------------- result_test --------------------------------\n')
     print(result_test)
+    print('\n------------------------- result_test_BEGIN --------------------------------\n')
+    print(result_test["test"])
     print('\n------------------------- result_test_END --------------------------------\n')
 
 
@@ -72,3 +77,9 @@ def getResults():
     
     print('\n------------------------- result_chain --------------------------------\n')
     print(result_chain)
+    print('\n------------------------- result_chain_BEGIN --------------------------------\n')
+    print(result_chain["code"])
+    print('\n------------------------- result_chain_END --------------------------------\n')
+    print('\n------------------------- result_chain_BEGIN --------------------------------\n')
+    print(result_chain["test"])
+    print('\n------------------------- result_chain_END --------------------------------\n')
